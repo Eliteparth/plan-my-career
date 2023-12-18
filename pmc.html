@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="pmc.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top scrolling-navbar top-nav-collapse">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://planmycareers.com/static/img/PMC-logo.png"
+                        alt="not found" height="50px" width="50px"></a>
+
+                <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class='bx bx-menu-alt-right'
+                            style="font-size: 30px; color: white;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="newbar"
+                                style="color: green;">PLAN
+                                MY CAREER
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="Dropdown-nav">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                Job
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Browse Jobs</a></li>
+                                <li><a class="dropdown-item" href="#">Job Income Hierarchy</a></li>
+                                <li><a class="dropdown-item" href="#">Internship</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                Career Tools
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Voice Discussion</a></li>
+                                <li><a class="dropdown-item" href="#">Career Road Map</a></li>
+                                <li><a class="dropdown-item" href="#">Interview</a></li>
+                                <li><a class="dropdown-item" href="#">Jugad Techniques</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                Education
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Universities</a></li>
+                                <li><a class="dropdown-item" href="#">Colleges</a></li>
+                                <li><a class="dropdown-item" href="#">Schools</a></li>
+                                <li><a class="dropdown-item" href="#">Boards</a></li>
+                                <li><a class="dropdown-item" href="#">Scholorships</a></li>
+                                <li><a class="dropdown-item" href="#">Internship</a></li>
+                                <li><a class="dropdown-item" href="#">Preparations</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                Resume
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Resume Writing</a></li>
+                                <li><a class="dropdown-item" href="#">Resume Guidlines</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="#">Resume Samples</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                Career
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Information Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                                <li><a class="dropdown-item" href="#">Government Sector</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="Dropdown-nav">Success Story</a>
+                            <!-- <a class="nav-link" href="#" style="color: white;">Blog</a> -->
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#" style="color: white;">Success Story</a> -->
+                            <a class="nav-link" href="#" id="Dropdown-nav">Blog</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="Dropdown-nav">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success rounded-pill bg-success me-2" type="submit"
+                            id="button4">singup
+                        </button>
+                        <button class="btn btn-outline-success rounded-pill bg-success" type="submit"
+                            id="button4">login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container hero-area">
+            <div class="row space-100">
+                <div class="col-lg-7 col-md-12 col-xs-12">
+                    <div class="contents" style="margin-top: 25%;">
+
+                        <h2 class="head-title" id="demo">Shape a Career That is a Dreamcatcher</h2>
+                        <p>With your zeal and our knowledge, we will enable you to shape a career that will make your
+                            dreams
+                            come true.
+                        </p>
+
+                        <div class="job-search-form">
+                            <form action="javascript:void(0)">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-xs-12">
+                                        <div class="form-group">
+                                            <input class="form-control rounded-pill" type="text"
+                                                placeholder="Select your Dream Career">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-xs-12">
+                                        <button type="submit" class="button bg-success rounded-pill border-0"
+                                            style="height: 40px; width:40px;"><i class='bx bx-search-alt '
+                                                style="color: white;"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-xs-12 ">
+                    <div class="intro-img" style="margin-top: 25%;">
+                        <img src="https://planmycareers.com/static/img/intro.png" width="100%" height="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <section class="category section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Browse Categories</h2>
+                <p>Choose Options from our Services</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/university.png">
+                                </div>
+                                <h5 class="heading">Universities</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/college.png">
+                                </div>
+                                <h5 class="heading">Colleges</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-2 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/boards.png">
+                                </div>
+                                <h5 class="heading">Boards</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0 ">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/school.png">
+                                </div>
+                                <h5 class="heading">Schools</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/intern.png">
+                                </div>
+                                <h5 class="heading">Internships</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/scholarship.png">
+                                </div>
+                                <h5 class="heading">Scholarships</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/preparation.png">
+                                </div>
+                                <h5 class="heading">Preparations</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-6 f-category p-0">
+                    <div class="card">
+                        <a href="#" style="text-decoration: none;">
+                            <center>
+                                <div class="catlogo">
+                                    <img src="https://planmycareers.com/static/img/categoryicon/job.png">
+                                </div>
+                                <h5>Jobs</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <a class="category-btn text-center" href="javascript:void(0)" id="More">More <span
+                        class="bx bx-chevrons-down"></span></a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <div id="browse-jobs" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-wrapper">
+                        <div class="contents">
+                            <center>
+                                <h1>That Endless World Of Career Opportunities</h1>
+                                <p>With a vast roster of career possibilities, choose the one which suits your talent
+                                    pool.
+                                </p>
+                                <a class="btn btn-common rounded-pill bg-success text-light" href="javascript:void(0)"
+                                    id="button2">Career options
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-thumb">
+                        <img class="img-fluid" src="https://planmycareers.com/static/img/search.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div id="browse-jobs" class="section">
+        <div class="section-header text-center">
+            <h2 class="section-title">Career Road Map <span class="bx bx-map"></span></h2>
+            <p>With us preplan a failproof path to success in your career which will make your true potential come out
+                and make you a force to be reckoned with.
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-wrapper">
+                        <div class="contents">
+                            <center>
+                                <h3>The Path to Indomitable Success in Your Career</h3>
+                                <p>Venturing into unknown waters without proper knowledge will make you a meal for
+                                    crocodiles in the water. Search through our extensive base of knowledge and find the
+                                    information which will help you to be successful.</p>
+                                <a class="btn btn-common rounded-pill bg-success text-light" href="javascript:void(0)"
+                                    id="button2">Search Career</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-thumb">
+                        <img class="img-fluid" src="https://planmycareers.com/static/img/rm.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div id="browse-jobs" class="section">
+        <div class="section-header text-center">
+            <h2 class="section-title">Money Is The Motivation, Money Is The Conversation</h2>
+            <p>Is your valuable investment of time and energy into a career going to reward you with enough returns for
+                your efforts or are you doing futile work?</p>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-thumb">
+                        <img class="img-fluid" src="https://planmycareers.com/static/img/job.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-wrapper">
+                        <center>
+                            <div class="contents">
+                                <h3>Job Satisfaction</h3>
+                                <p>Are you settled cozily with your job, or are you hungry for more? If you are looking
+                                    for
+                                    real growth, we can help you.</p>
+                                <a class="btn btn-common rounded-pill" href="#" id="button7">Search jobs</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div id="browse-jobs" class="section">
+        <div class="section-header text-center">
+            <h2 class="section-title">Search Schools and Colleges</h2>
+            <p>PMC is here to Guide you the best Schools or Colleges at your desired place <br>
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-wrapper">
+                        <center>
+                            <div class="contents">
+                                <h3>Search Best Schools And Colleges at Your Place</h3>
+                                <p>We provide the List of best among Schools and Colleges<br>
+                                    At your desired location</p>
+                                <a class="btn btn-common rounded-pill" href="/schools/" id="button7">Search Schools</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-thumb">
+                        <img class="img-fluid" src="https://planmycareers.com/static/img/school.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div id="browse-jobs" class="section">
+        <div class="section-header text-center">
+            <h2 class="section-title">Let Your Work Define You</h2>
+            <p>With our tools, sharpen your skills to a scalpel-like precision and be an artist at your work. A man’s
+                worth is the man’s skills.</p>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="work-process">
+                        <center>
+                            <span class="process-icon">
+                                <i class="bx bx-notepad text-success "></i>
+                            </span>
+                        </center>
+                        <center>
+                            <h4>Resume Writing</h4>
+                            <p>Create Resume with a proper format.</p>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="work-process step-2">
+                        <center>
+                            <span class="process-icon">
+                                <i class="bx bx-question-mark text-success"></i>
+                            </span>
+                        </center>
+                        <center>
+                            <h4>Interview Questions</h4>
+                            <p>Practice the most asked Interview Questions by the Top companies</p>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="work-process step-3">
+                        <center>
+                            <span class="process-icon">
+                                <i class="bx bx-microphone text-success"></i>
+                            </span>
+                        </center>
+                        <center>
+                            <h4>Voice Discussion</h4>
+                            <p>Discuss with the Experts or Ask your Queries.</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <section id="testimonial" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Quotes</h2>
+            </div>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"
+                                style=" background-color:#26ae61; height: 12px; width: 12px; border-radius: 50%; border: 3px solid rgb(234, 231, 231);"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                                style=" background-color: #26ae61; height: 12px; width: 12px; border-radius: 50%; border: 3px solid rgb(234, 231, 231);"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                                style=" background-color: #26ae61; height: 12px; width: 12px; border-radius: 50%; border: 3px solid rgb(234, 231, 231);"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <center>
+                                    <div class="card2">
+                                        <img src="https://planmycareers.com/static/img/testimonial/img3.png"
+                                            class="d-block " alt="...">
+                                        <p class="description">Morbi quam enim, cursus non erat pretium veh icula
+                                            finibus ex
+                                            stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                            icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                            erat
+                                            pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                        <a class="author">Jassica</a>
+                                        <br>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="carousel-item">
+                                <center>
+                                    <div class="card2">
+                                        <img src="https://planmycareers.com/static/img/testimonial/img2.png"
+                                            class="d-block" alt="...">
+
+                                        <p class="description">Morbi quam enim, cursus non erat pretium veh icula
+                                            finibus ex
+                                            stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                            icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                            erat
+                                            pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                        <a class="author">helen</a>
+                                        <br>
+                                        <span>engineer</span>
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="carousel-item">
+                                <center>
+                                    <div class="card2">
+                                        <img src="https://planmycareers.com/static/img/testimonial/img1.png"
+                                            class="d-block" alt="...">
+                                        <p class="description">Morbi quam enim, cursus non erat pretium veh icula
+                                            finibus ex
+                                            stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                            icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non
+                                            erat
+                                            pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                        <a class="author">Jhon Deo</a>
+                                        <br>
+                                        <span>Senior accountent</span>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="download" class="section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-xs-12">
+                    <div class="download-wrapper">
+                        <div class="contents">
+                            <div class="download-text">
+                                <h4>Download Our PMC App</h4>
+                                <p>Enjoy the PMC app in your hands by installing it your mobile. Never miss any update
+                                    regarding career </p>
+                            </div>
+                            <div class="app-button">
+                                <a href="javascript:void(0)" class="btn btn-border rounded-pill" id="button3"><i
+                                        class="bx bxl-apple" style="float: left; font-size: 45px;"></i>
+                                    <strong>Download</strong> <br>
+                                    <span>From
+                                        Apple store</span></a>
+                                <a href="javascript:void(0)" class="btn btn-common btn-effect rounded-pill"
+                                    id="button5"><i class="bx bxl-play-store" style="float: left; font-size: 45px;"></i>
+                                    Download
+                                    <br> <span>From Play Store</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-xs-12">
+                    <div class="download-thumb">
+                        <img class="img-fluid" src="https://planmycareers.com/static/img/app.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <section class="footer-Content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="widget">
+                            <div class="footer-logo"><img src="https://planmycareers.com/static/img/PMC-logo.png"
+                                    alt="Plan My Career" height="60px" width="60px"></div>
+                            <div class="textwidget">
+                                <p>Plan My Career is a overall tool for your problems regaring your Career. We provide
+                                    the best career options that suits your standard</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title">Quick Links</h3>
+                            <ul class="menu">
+                                <li><a href="#" style="text-decoration: none;">About Us</a></li>
+                                <li><a href="#" style="text-decoration: none;">Support</a></li>
+                                <li><a href="#" style="text-decoration: none;">License</a></li>
+                                <li><a href="$" style="text-decoration: none;">Contact</a></li>
+                            </ul>
+                            <ul class="menu">
+                                <li><a href="#" style="text-decoration: none;">Terms &amp; Conditions</a></li>
+                                <li><a href="#" style="text-decoration: none;">Privacy</a></li>
+                                <li><a href="#" style="text-decoration: none;">Refferal Terms</a></li>
+                                <li><a href="#" style="text-decoration: none;">Product License</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title" style="font-family: Comic Sans MS, sans-serif;">Subscribe Now</h3>
+                            <p>subscibe plan my career for all new updates</p>
+                            <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
+                                <div class="form-group is-empty">
+                                    <input type="email" value="" name="Email" class="form-control" id="EMAIL"
+                                        placeholder="Enter Email..." required="">
+                                    <button type="submit" name="subscribe" id="subscribes"
+                                        class="btn btn-common sub-btn"><i class="bx bx-envelope"></i></button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                            <ul class="mt-3 footer-social">
+                                <li><a class="facebook" href="#"><i class="bx bxl-facebook"></i></a>
+                                </li>
+                                <li><a class="twitter" href="#"><i class="bx bxl-twitter"></i></a></li>
+                                <li><a class="linkedin" href="#"><i class="bx bxl-linkedin"></i></a>
+                                </li>
+                                <li><a class="google-plus" href="#"><i class="bx bxl-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-info text-center">
+                            <p>Copyright reserved to Plan My Careers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="javascript:void(0)" class="back-to-top">
+        <i class='bx bx-up-arrow-alt' style="font-size: 25px;"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+        integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"
+        integrity="sha512-AmJ0T6lpw/ZQtCleMyfbraDy8AGQ9tWaB/PmRkXdKxH9Kvo0oTuW6+2hTEQ89mHkFIO/LpColEe3+QE+FJtgIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
